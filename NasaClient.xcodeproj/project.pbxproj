@@ -13,9 +13,12 @@
 		8A0295CF2636D1E10013AC5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0295CD2636D1E10013AC5A /* Main.storyboard */; };
 		8A0295D12636D1E10013AC5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A0295D02636D1E10013AC5A /* Assets.xcassets */; };
 		8A0295D42636D1E10013AC5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0295D22636D1E10013AC5A /* LaunchScreen.storyboard */; };
+		8BE514309C131C567DD62189 /* Pods_NasaClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003A3C2580BCF48AE2307AFD /* Pods_NasaClient.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		003A3C2580BCF48AE2307AFD /* Pods_NasaClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NasaClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CA0B5FACAFE91A395B8B6BF /* Pods-NasaClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaClient.release.xcconfig"; path = "Target Support Files/Pods-NasaClient/Pods-NasaClient.release.xcconfig"; sourceTree = "<group>"; };
 		8A0295C42636D1E10013AC5A /* NasaClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A0295C72636D1E10013AC5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A0295C92636D1E10013AC5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		8A0295D02636D1E10013AC5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A0295D32636D1E10013AC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A0295D52636D1E10013AC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC30A4231B15BC3D3AA5BBDB /* Pods-NasaClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaClient.debug.xcconfig"; path = "Target Support Files/Pods-NasaClient/Pods-NasaClient.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BE514309C131C567DD62189 /* Pods_NasaClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D44EB0A1DC3330AD9E27F42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC30A4231B15BC3D3AA5BBDB /* Pods-NasaClient.debug.xcconfig */,
+				5CA0B5FACAFE91A395B8B6BF /* Pods-NasaClient.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8A0295BB2636D1E00013AC5A = {
 			isa = PBXGroup;
 			children = (
 				8A0295C62636D1E10013AC5A /* NasaClient */,
 				8A0295C52636D1E10013AC5A /* Products */,
+				5D44EB0A1DC3330AD9E27F42 /* Pods */,
+				BF963FD509D465A223276106 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = NasaClient;
 			sourceTree = "<group>";
 		};
+		BF963FD509D465A223276106 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				003A3C2580BCF48AE2307AFD /* Pods_NasaClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A0295D82636D1E10013AC5A /* Build configuration list for PBXNativeTarget "NasaClient" */;
 			buildPhases = (
+				B5A3DA71BDAAC7A4E96DE975 /* [CP] Check Pods Manifest.lock */,
 				8A0295C02636D1E10013AC5A /* Sources */,
 				8A0295C12636D1E10013AC5A /* Frameworks */,
 				8A0295C22636D1E10013AC5A /* Resources */,
+				0E290DCE13C24859EE744BBB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E290DCE13C24859EE744BBB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NasaClient/Pods-NasaClient-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NasaClient/Pods-NasaClient-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NasaClient/Pods-NasaClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5A3DA71BDAAC7A4E96DE975 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NasaClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A0295C02636D1E10013AC5A /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		8A0295D92636D1E10013AC5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC30A4231B15BC3D3AA5BBDB /* Pods-NasaClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		8A0295DA2636D1E10013AC5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CA0B5FACAFE91A395B8B6BF /* Pods-NasaClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
